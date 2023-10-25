@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "4675f8a1-71f6-40f3-8828-738b4ec2efa5",
+		"name": "mymdb-api-v01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get movies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5476/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5476",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5476/movies/1698232441374",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5476",
+					"path": [
+						"movies",
+						"1698232441374"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Two Throne\",\n    \"year\": 2004\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5476/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5476",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete movie",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"The Two Throne\",\n    \"year\": 2004\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5476/movies/1234568",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5476",
+					"path": [
+						"movies",
+						"1234568"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update movie",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"year\": 2004,\n    \"title\": \"Silvehawk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5476/movies/1234568",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5476",
+					"path": [
+						"movies",
+						"1234568"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
