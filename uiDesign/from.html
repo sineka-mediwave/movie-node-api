@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie AddForm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <form class="container">
+      <h1>Add Movie</h1>
+      <!-- Grid -->
+      <div class="grid">
+        <!-- Markup example 1: input is inside label -->
+        <label for="title">
+          Movie Title
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Enter movie name"
+            required
+          />
+        </label>
+
+        <label for="year">
+          Release Year
+          <input
+            type="text"
+            id="year"
+            name="year"
+            placeholder="Enter year"
+            required
+          />
+        </label>
+      </div>
+
+      <!-- Button -->
+      <button type="submit">Add</button>
+    </form>
+  </body>
+</html>
